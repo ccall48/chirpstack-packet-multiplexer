@@ -1,8 +1,14 @@
 version: "3"
 services:
   chirpstack-packet-multiplexer:
-    build:
-      context: .
-      dockerfile: Dockerfile-devel
+    image: chirpstack-packet-multiplexer:latest
+    ports:
+      - 1800:1800/udp
     volumes:
       - ./:/chirpstack-packet-multiplexer
+      - ./config/chirpstack-packet-multiplexer.toml:/etc/chirpstack-packet-multiplexer/chirpstack-packet-multiplexer.toml:ro
+
+networks:
+  default:
+    external:
+      name: core-infra
