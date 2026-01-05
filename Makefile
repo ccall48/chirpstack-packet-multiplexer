@@ -83,3 +83,7 @@ test:
 # Enter the devshell.
 devshell:
 	nix-shell
+
+# Dependencies
+dev-dependencies:
+	cargo install cross --git https://github.com/cross-rs/cross --rev 426e8110a083c1aaa8e04ed460e86f4606226619 --locked

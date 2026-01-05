@@ -3,7 +3,10 @@
 pkgs.mkShell {
   buildInputs = [
     pkgs.rustup
-    pkgs.cargo-cross
     pkgs.cargo-deb
+    # pkgs.cargo-cross # this is installed using make dev-dependencies until a new release is out
   ];
+  shellHook = ''
+    export PATH=$PATH:~/.cargo/bin
+  '';
 }
