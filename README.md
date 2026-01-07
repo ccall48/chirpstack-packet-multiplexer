@@ -6,6 +6,14 @@ to multiple servers, with the option to mark servers as uplink only.
 
 ## Install
 
+### Binaries
+
+Pre-compiled binaries can be downloaded from [https://artifacts.chirpstack.io/downloads/chirpstack-packet-multiplexer/](https://artifacts.chirpstack.io/downloads/chirpstack-packet-multiplexer/).
+
+### Docker
+
+Docker images can be found at [https://hub.docker.com/r/chirpstack/chirpstack-packet-multiplexer/tags](https://hub.docker.com/r/chirpstack/chirpstack-packet-multiplexer/tags).
+
 ### Debian / Ubuntu
 
 ChirpStack provides a Debian / Ubuntu repository which can be used to install
